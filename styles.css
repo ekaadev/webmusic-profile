@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #0d0d16;
+    color: #ececec;
+}
+
+nav {
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    background-color: #ffaebe;
+    height: 5.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7rem;
+    padding-top: 1.5rem;
+}
+
+nav li {
+    font-size: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0d0d16;
+}
+
+nav a:hover {
+    color: #ececec;
+}
+
+.home {
+    display: flex;
+    width: 100vw;
+}
+
+.left-box {
+    padding: 11rem 5rem;
+    height: 100%;
+}
+
+.main-image {
+    width: 30vw;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.right-box {
+    padding: 4rem;
+}
+
+h1 {
+    margin-top: 14rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.article {
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+.album {
+    width: 100vw;
+}
+
+.header {
+    padding-top: 9rem;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.photo-album {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.image {
+    width: 16rem;
+    border-radius: 8px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+figure a {
+    text-decoration: none;
+    color: #ececec;
+}
+
+figure a:hover {
+    color: #ffaebe;
+}
+
+.header2 {
+    padding-top: 9rem;
+    height: 100%;
+}
+
+.photo-single {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #ffaebe;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+    nav ul {
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .left-box {
+        margin: 0 auto;
+    }
+
+    .main-image {
+        width: 12rem;
+    }
+
+    .right-box {
+        margin-top: -10rem;
+        padding: 0 auto;
+        width: 100%;
+    }
+    
+    h1 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 3.5rem;
+    }
+
+    .header {
+        text-align: center;
+    }
+}
